@@ -1,0 +1,51 @@
+.contact-content{
+  height: 80%;
+}
+
+.map-style {
+  padding: 15px;
+}
+
+.margin-15{
+  margin: 15px;
+}
+
+.colorful{
+  animation: colorchange 10s ease infinite;
+  -webkit-animation: colorchange 10s ease infinite;
+  -moz-animation: colorchange 10s ease infinite;
+}
+
+@keyframes colorchange {
+  $list-orange: #E57373 #EF5350 #F44336 #E53935 #D32F2F #C62828 #B71C1C;
+
+  $n: length($list-orange);
+  $x: 100% / $n;
+
+  @for $i from 0 to $n {
+    $y: (0% + $i * $x);
+    #{$y} {
+      color: nth($list-orange, $i+1);
+    }
+  }
+  100% {
+    color: nth($list-orange, 1);
+  }
+}
+
+@-webkit-keyframes colorchange {
+  $list-orange: #E57373 #EF5350 #F44336 #E53935 #D32F2F #C62828 #B71C1C;
+
+  $n: length($list-orange);
+  $x: 100% / $n;
+
+  @for $i from 0 to $n {
+    $y: (0% + $i * $x);
+    #{$y} {
+      color: nth($list-orange, $i+1);
+    }
+  }
+  100% {
+    color: nth($list-orange, 1);
+  }
+}
