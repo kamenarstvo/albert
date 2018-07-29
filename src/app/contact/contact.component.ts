@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 import {
   trigger,
@@ -14,21 +14,21 @@ import {
   styleUrls: ['./contact.component.scss'],
 
   animations: [
-    trigger('flyInOut', [
-      state('in', style({transform: 'translateX(0)'})),
+    trigger('fadeIn', [
       transition('void => *', [
-        style({transform: 'translateX(100%)'}),
-        animate(300)
+        style({opacity: 0}),
+        animate(500)
       ]),
       transition('* => void', [
-        animate(300, style({transform: 'translateX(-100%)'}))
+        animate(500, style({opacity: 1}))
       ])
     ])
   ]
 })
 export class ContactComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit() {
   }

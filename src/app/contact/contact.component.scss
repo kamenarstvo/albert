@@ -1,51 +1,50 @@
-.contact-content{
-  height: 80%;
-}
 
 .map-style {
-  padding: 15px;
+  height: 85vh;
 }
 
-.margin-15{
-  margin: 15px;
+.info {
+  text-align: center;
+  vertical-align: middle;
 }
 
-.colorful{
-  animation: colorchange 10s ease infinite;
-  -webkit-animation: colorchange 10s ease infinite;
-  -moz-animation: colorchange 10s ease infinite;
+a {
+  color: white;
 }
 
-@keyframes colorchange {
-  $list-orange: #E57373 #EF5350 #F44336 #E53935 #D32F2F #C62828 #B71C1C;
+.icon-button {
+  margin: auto;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
 
-  $n: length($list-orange);
-  $x: 100% / $n;
+  background: linear-gradient(45deg, #45cafc, #303f9f), #45cafc;
 
-  @for $i from 0 to $n {
-    $y: (0% + $i * $x);
-    #{$y} {
-      color: nth($list-orange, $i+1);
-    }
-  }
-  100% {
-    color: nth($list-orange, 1);
-  }
-}
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08), 0 6px 6px rgba(0, 0, 0, 0.10);
+  border-radius: 100%;
 
-@-webkit-keyframes colorchange {
-  $list-orange: #E57373 #EF5350 #F44336 #E53935 #D32F2F #C62828 #B71C1C;
-
-  $n: length($list-orange);
-  $x: 100% / $n;
-
-  @for $i from 0 to $n {
-    $y: (0% + $i * $x);
-    #{$y} {
-      color: nth($list-orange, $i+1);
-    }
-  }
-  100% {
-    color: nth($list-orange, 1);
+  transition: background 4s ease, box-shadow 1.2s linear;
+  &:hover {
+    background: #303f9f;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.26), 0 6px 6px rgba(0, 0, 0, 0.28);
   }
 }
+
+.address {
+}
+
+.phone {
+
+}
+
+.social {
+  height: 10vh;
+}
+
+
+
+
+
+

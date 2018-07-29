@@ -12,7 +12,7 @@ import {
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss'],
   animations: [
-    trigger('changeOpacity', [
+    trigger('fadeIn', [
       transition('void => *', [
         style({opacity: 0}),
         animate(1000)

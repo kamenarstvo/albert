@@ -1,28 +1,46 @@
-<div class="row contact-content">
-  <div class="col-sm-7 map-style">
-    <div class="margin-15">
-      <agm-map class="z-depth-1-half map-container" style="height: 400px;" [latitude]="20" [longitude]="20">
-        <agm-marker [latitude]="20" [longitude]="20"></agm-marker>
-      </agm-map>
-    </div>
+<div class="row" [@fadeIn]>
+  <div class="col-sm-8 p-15">
+    <agm-map class="z-depth-1-half map-container map-style" [latitude]="49.0699871"
+             [longitude]="20.2806861" [zoom]="17">
+      <agm-marker [latitude]="49.0699871" [longitude]="20.2806861"></agm-marker>
+    </agm-map>
   </div>
 
-  <div class="col-sm-5 text-center" [@flyInOut]>
-    <div>
-      <a class="btn-floating  accent-1 waves-light" mdbRippleRadius><i class="fa fa-map-marker colorful"></i></a>
-      <p>Fraňa Kráľa 2049/82, 058 01 Poprad-Veľká</p>
-      <small>Kamenárstvo sa nachádza pri cintoríne</small>
-    </div>
 
-    <div>
-      <a class="btn-floating  accent-1 waves-light" mdbRippleRadius><i class="fa fa-phone colorful"></i></a>
-      <p>+421 911 111 111</p>
-      <small>Po - Pia, 8:00-16:00</small>
-    </div>
+  <div class="col-sm-4 text-center" [@fadeIn]>
+    <div class="info">
 
-    <div>
-      <a class="btn-floating  accent-1 waves-light" mdbRippleRadius><i class="fa fa-facebook colorful"></i></a>
-      <p>facebook.com</p>
+      <div class="address">
+        <i class="fa fa-map-marker"></i>
+        <p>Fraňa Kráľa 2049/82, 058 01 Poprad-Veľká
+          <br>
+          <small>Kamenárstvo sa nachádza pri cintoríne</small>
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="phone">
+        <i class="fa fa-phone"></i>
+        <p>+421 905 809 207<br>
+          +421 902 368 111<br>
+          +421 903 607 266<br>
+          <small>Po - Pia, 8:00-16:00</small>
+        </p>
+      </div>
+
+      <hr>
+
+      <div class="social">
+        <div>
+          <a target="_blank" href="https://www.facebook.com/Kamenárstvo-Albert-278726532664730">
+            <div class="icon-button">
+              <i class="fa fa-facebook"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
     </div>
   </div>
 
